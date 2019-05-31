@@ -183,7 +183,8 @@ class Swiper extends Component {
       this.setState({ labelType: LABEL_TYPES.NONE })
     }
 
-    const { onTapCardDeadZone } = this.props
+    const { 
+      CardDeadZone } = this.props
     if (
       this._animatedValueX < -onTapCardDeadZone ||
       this._animatedValueX > onTapCardDeadZone ||
@@ -274,7 +275,7 @@ class Swiper extends Component {
     }
 
     if (!this.state.slideGesture) {
-      this.props.onTapCard(this.state.firstCardIndex)
+      this.props.onTapCard(this.state.firstCardIndex, e)
     }
 
     this.setState({
