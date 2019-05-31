@@ -183,8 +183,7 @@ class Swiper extends Component {
       this.setState({ labelType: LABEL_TYPES.NONE })
     }
 
-    const { 
-      CardDeadZone } = this.props
+    const { onTapCardDeadZone } = this.props
     if (
       this._animatedValueX < -onTapCardDeadZone ||
       this._animatedValueX > onTapCardDeadZone ||
