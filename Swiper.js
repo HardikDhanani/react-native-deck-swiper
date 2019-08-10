@@ -968,7 +968,7 @@ Swiper.defaultProps = {
   onSwipedRight: cardIndex => { },
   onSwipedTop: cardIndex => { },
   onSwiping: () => { },
-  onTapCard: (cardIndex) => { },
+  onTapCard: (cardIndex, event) => { },
   onTapCardDeadZone: 5,
   outputCardOpacityRangeX: [0.8, 1, 1, 1, 0.8],
   outputCardOpacityRangeY: [0.8, 1, 1, 1, 0.8],
